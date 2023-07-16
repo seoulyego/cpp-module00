@@ -11,16 +11,12 @@
 int	main(int argc, char *argv[])
 {
 	if (argc == 1) {
-		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
 	}
-	else {
-		for (int i = 1; argv[i] != NULL; i++) {
-			std::string str(argv[i]);
-			for (int j = 0; str[j] != '\0'; j++)
-				str[j] = toupper(str[j]);
-			std::cout << str;
-		}
-		std::cout << std::endl;
+	for (int i = 1; argv[i] != NULL; i++) {
+		for (int j = 0; argv[i][j] != '\0'; j++)
+			std::cout << toupper(argv[i][j]);
 	}
+	std::cout << std::endl;
 	return (0);
 }

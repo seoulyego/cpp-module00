@@ -10,7 +10,9 @@ MJFLAGS				 =	-MJ $@.part.json
 RM					:=	rm -rf
 
 SRC_FILES			:=	$(addsuffix .cpp,			\
-							megaphone				\
+							Contact					\
+							PhoneBook				\
+							main					\
 						)
 OBJ_FILES			:=	$(SRC_FILES:.cpp=.o)
 JSON_FILES			:=	compile_commands
