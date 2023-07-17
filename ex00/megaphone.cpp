@@ -1,4 +1,3 @@
-#include <cstdlib>
 #include <iostream>
 
 /*
@@ -15,7 +14,7 @@ int	main(int argc, char *argv[])
 	}
 	for (int i = 1; argv[i] != NULL; i++) {
 		for (int j = 0; argv[i][j] != '\0'; j++)
-			std::cout << toupper(argv[i][j]);
+			std::cout << static_cast<char>(std::toupper(argv[i][j]));
 	}
 	std::cout << std::endl;
 	return (0);

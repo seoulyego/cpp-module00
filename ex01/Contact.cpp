@@ -1,4 +1,5 @@
 #include "Contact.hpp"
+#include <iomanip>
 #include <iostream>
 
 std::string	Contact::getFirstName(void) const {
@@ -43,10 +44,15 @@ void	Contact::setDarkestSecret(std::string str) {
 }
 
 std::string Contact::getShortStr(std::string str) {
-	if (static_cast<int>(str.size()) > FIELD_WIDTH)
-		return (str.substr(0, 9) + ".");
-	else
-		return (std::string(10 - static_cast<int>(str.size()), ' ') + str);
+	std::string short_str = str;
+
+	std::cout << std::setw(FIELD_WIDTH);
+	if (FIELD_WIDTH < short_str.length())
+	{
+		short_str.resize(10);
+		short_str.replace(9, 1, ".");
+	}
+	return short_str;
 }
 
 void	Contact::printShortContact(void) {
