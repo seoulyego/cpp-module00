@@ -17,5 +17,5 @@ int	main(int argc, char *argv[])
 			std::cout << static_cast<char>(std::toupper(argv[i][j]));
 	}
 	std::cout << std::endl;
-	return (0);
+	return 0;
 }

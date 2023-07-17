@@ -3,23 +3,23 @@
 #include <iostream>
 
 std::string	Contact::getFirstName(void) const {
-	return (first_name);
+	return first_name;
 }
 
 std::string	Contact::getLastName(void) const {
-	return (last_name);
+	return last_name;
 }
 
 std::string	Contact::getNickname(void) const {
-	return (nickname);
+	return nickname;
 }
 
 std::string	Contact::getPhoneNumber(void) const {
-	return (phone_number);
+	return phone_number;
 }
 
 std::string	Contact::getDarkestSecret(void) const {
-	return (darkest_secret);
+	return darkest_secret;
 }
 
 

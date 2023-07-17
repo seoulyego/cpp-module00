@@ -1,6 +1,8 @@
 .DS_Store
-.cache
-.obj
+.vscode/
+.cache/
+.obj/
 compile_commands.json
 megaphone
 phonebook
+ex02/
