@@ -22,5 +22,5 @@ int main(void) {
 			std::cout << "(system) Wrong command entered" << std::endl;
 		std::cout << std::endl;
 	}
-	return (0);
+	return 0;
 }
