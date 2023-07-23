@@ -77,14 +77,15 @@ void	PhoneBook::addContact(void) {
 }
 
 void	PhoneBook::searchContact(void) {
-	std::string	input;
 
 	if (filled_contacts == 0) {
 		std::cout << "(system) Your PhoneBook is Empty" << std::endl;
+		return ;
 	}
 	else {
 		displayContactList();
 		std::cout << "(system) Enter index for search : ";
+		std::string	input;
 		std::getline(std::cin, input);
 		if (std::cin.eof())
 			std::exit(EXIT_FAILURE);
@@ -96,7 +97,6 @@ void	PhoneBook::searchContact(void) {
 			std::cout << "(system) Invalid index is entered" << std::endl;
 			return ;
 		}
-		std::cout << std::endl;
 		int	index = std::atoi(input.c_str());
 		if (0 <= index && index < filled_contacts)
 			this->contacts[index].printContactDetails();
@@ -106,10 +106,10 @@ void	PhoneBook::searchContact(void) {
 }
 
 void	PhoneBook::displayContactList(void) {
-	std::cout << "     index" << "|" \
-			<< "first name" << "|" \
-			<< " last name" << "|" \
-			<< "  nickname" << "|" << std::endl;
+	std::cout << "     Index" << "|" \
+			<< "First name" << "|" \
+			<< " Last name" << "|" \
+			<< "  Nickname" << "|" << std::endl;
 	for (int i = 0; i < this->filled_contacts; i++) {
 		std::cout << "         " << i;
 		this->contacts[i].printShortContact();

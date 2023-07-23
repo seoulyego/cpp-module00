@@ -63,9 +63,9 @@ void	Contact::printShortContact(void) {
 }
 
 void	Contact::printContactDetails(void) {
-	std::cout << "first name : " << this->first_name << std::endl;
-	std::cout << "last name : " << this->last_name << std::endl;
-	std::cout << "nickname : " << this->nickname << std::endl;
-	std::cout << "phone number : " << this->phone_number << std::endl;
-	std::cout << "darkest secret : " << this->darkest_secret<< std::endl;
+	std::cout << "First name : " << this->first_name << std::endl;
+	std::cout << "Last name : " << this->last_name << std::endl;
+	std::cout << "Nickname : " << this->nickname << std::endl;
+	std::cout << "Phone number : " << this->phone_number << std::endl;
+	std::cout << "Darkest secret : " << this->darkest_secret<< std::endl;
 }
