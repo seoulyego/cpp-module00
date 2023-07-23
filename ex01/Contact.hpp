@@ -14,11 +14,11 @@ class Contact {
 		std::string darkest_secret;
 
 	public:
-		std::string	getFirstName(void) const;
-		std::string	getLastName(void) const;
-		std::string	getNickname(void) const;
-		std::string	getPhoneNumber(void) const;
-		std::string	getDarkestSecret(void) const;
+		std::string	getFirstName() const;
+		std::string	getLastName() const;
+		std::string	getNickname() const;
+		std::string	getPhoneNumber() const;
+		std::string	getDarkestSecret() const;
 
 		void	setFirstName(std::string str);
 		void	setLastName(std::string str);
@@ -27,8 +27,8 @@ class Contact {
 		void	setDarkestSecret(std::string str);
 
 		std::string getShortStr(std::string str);
-		void	printShortContact(void);
-		void	printContactDetails(void);
+		void	printShortContact();
+		void	printContactDetails();
 };
 
 #endif  // CONTACT_HPP

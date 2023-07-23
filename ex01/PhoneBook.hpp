@@ -11,11 +11,11 @@ class PhoneBook {
 		int		contact_index;
 		int		filled_contacts;
 
-		void	displayContactList(void);
+		void	displayContactList();
 
 	public:
-		void	addContact(void);
-		void	searchContact(void);
+		void	addContact();
+		void	searchContact();
 
 	PhoneBook();
 };

@@ -2,23 +2,23 @@
 #include <iomanip>
 #include <iostream>
 
-std::string	Contact::getFirstName(void) const {
+std::string	Contact::getFirstName() const {
 	return first_name;
 }
 
-std::string	Contact::getLastName(void) const {
+std::string	Contact::getLastName() const {
 	return last_name;
 }
 
-std::string	Contact::getNickname(void) const {
+std::string	Contact::getNickname() const {
 	return nickname;
 }
 
-std::string	Contact::getPhoneNumber(void) const {
+std::string	Contact::getPhoneNumber() const {
 	return phone_number;
 }
 
-std::string	Contact::getDarkestSecret(void) const {
+std::string	Contact::getDarkestSecret() const {
 	return darkest_secret;
 }
 
@@ -55,14 +55,14 @@ std::string Contact::getShortStr(std::string str) {
 	return short_str;
 }
 
-void	Contact::printShortContact(void) {
+void	Contact::printShortContact() {
 	std::cout << "|" << getShortStr(this->first_name) \
 			<< "|" << getShortStr(this->last_name) \
 			<< "|" << getShortStr(this->nickname) \
 			<< "|" << std::endl;
 }
 
-void	Contact::printContactDetails(void) {
+void	Contact::printContactDetails() {
 	std::cout << "First name : " << this->first_name << std::endl;
 	std::cout << "Last name : " << this->last_name << std::endl;
 	std::cout << "Nickname : " << this->nickname << std::endl;

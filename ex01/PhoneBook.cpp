@@ -6,7 +6,7 @@ PhoneBook::PhoneBook() {
 	this->filled_contacts = 0;
 }
 
-void	PhoneBook::addContact(void) {
+void	PhoneBook::addContact() {
 	Contact	&current_contact = contacts[contact_index % BOOK_SIZE];
 	std::string	input;
 
@@ -76,7 +76,7 @@ void	PhoneBook::addContact(void) {
 		this->filled_contacts++;
 }
 
-void	PhoneBook::searchContact(void) {
+void	PhoneBook::searchContact() {
 
 	if (filled_contacts == 0) {
 		std::cout << "(system) Your PhoneBook is Empty" << std::endl;
@@ -105,7 +105,7 @@ void	PhoneBook::searchContact(void) {
 	}
 }
 
-void	PhoneBook::displayContactList(void) {
+void	PhoneBook::displayContactList() {
 	std::cout << "     Index" << "|" \
 			<< "First name" << "|" \
 			<< " Last name" << "|" \
